@@ -20,7 +20,19 @@
     </div>
   </div>
 
-<%= yield %>
+  <div id="main">
+    <div id="leftColumn">
+      <%= yield :mainColumn %>
+    </div>
+    <div id="sidebar">
+      <%= yield :sidebar %>
+    </div>
+  </div>
+
+  <div id="footer">
+    <hr id="footer_separator" % />
+    <span>Developed by Wizard</span>
+  </div>
 
 </body>
 </html>

@@ -2,6 +2,8 @@ img {
   border: 0;
 }
 
+/* Menu CSS */
+
 div#logo {
   border-style:none;
   padding-bottom:10px;
@@ -41,7 +43,6 @@ img#logo {
 }
 
 #menu li a {
-/*  background-color:url(/images/menu_item.png);*/
   color:#ffffff;
   display:block;
   font-weight:bold;
@@ -55,4 +56,25 @@ img#logo {
 #menu li a:hover {
   color:#08719A;
   text-decoration:none;
+}
+
+/* Main block CSS */
+#main {
+}
+
+#leftColumn {
+}
+
+#sidebar {
+}
+
+/* Footer CSS */
+hr#footer_separator {
+  width:95%;
+}
+
+#footer {
+  margin-top:10px;
+  margin:0 auto;
+  width:78%;
 }
