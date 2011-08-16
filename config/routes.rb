@@ -1,8 +1,9 @@
 Aureliu::Application.routes.draw do
-  # The priority is based upon order of creation:
-  # first created -> highest priority.
-
   root :to => 'kiosks#index'
+  match '/about' => 'kiosks#about'
+  match '/kiosks' => 'kiosks#kiosks'
+  match '/kiosk/:id' => 'kiosks#show', :as => :kiosk
+  match '/contacts' => 'kiosks#contacts'
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'

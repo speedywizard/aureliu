@@ -50,7 +50,7 @@ img#logo {
   background-image:url(/images/menu_item.png);
   /*background-color:black;*/
   float:left;
-  padding:0px 4px 0px 0px;
+  padding:0px 10px;
 }
 
 #menu li a {
@@ -59,7 +59,7 @@ img#logo {
   font-weight:bold;
   font-size:24px;
   line-height:33px;
-  padding:0px 5px;
+  padding:0px 10px;
   text-align:center;
   text-decoration:none;
 }
@@ -77,10 +77,13 @@ img#logo {
 }
 
 #leftColumn {
-  text-indent:20px;
   float:left;
   width:70%;
   padding-left:5px;
+}
+
+#leftColumn p {
+  text-indent:20px;
 }
 
 #sidebar {
@@ -141,6 +144,15 @@ hr#footer_separator {
   color:#268C99;
 }
 
+/* Kiosk details CSS */
+.item_name {
+  font-weight:bold;
+}
+
+.item_description {
+  font-weight:bold;
+}
+
 /* Other rules */
 a#developer:link, a#developer:visited {
   text-decoration:none;
@@ -153,4 +165,15 @@ a#developer:hover {
 
 .spacer {
   padding:15px 0;
+}
+
+.thumbBox {
+  width:80%;
+  padding-top:10px;
+  padding-left:5px;
+}
+
+.thumbnail {
+  width:150px;
+  padding:5px 8px;
 }

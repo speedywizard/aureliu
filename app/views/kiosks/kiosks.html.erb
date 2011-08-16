@@ -1,0 +1,8 @@
+<% content_for :mainColumn do %>
+  <h1 class="leftColumnTitle">Киоски</h1>
+  <div class="thumbBox">
+    <% @kiosks.each_with_index do |kiosk, index| %>
+      <%= link_to(image_tag("kiosks/thumbs/thumb_#{kiosk.kiosk_photos.first.filename}", :class => "thumbnail"), kiosk_path(kiosk)) %>
+    <% end %>
+  </div>
+<% end %>

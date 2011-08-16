@@ -4,7 +4,7 @@ set :repository,  "git@github.com:speedywizard/aureliu.git"
 
 set :scm, :git
 set :user, "deploy"
-set :use_sudo, false
+set :use_sudo, true
 set :scm_passphrase, "b12D386A8j07"
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
@@ -24,6 +24,12 @@ namespace :deploy do
   task :start do ; end
   task :stop do ; end
   task :restart, :roles => :app, :except => { :no_release => true } do
-    run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
+    run "touch #{File.join(current_path,'tmp','restart.txt')}"
+    run "#{try_sudo} /usr/local/etc/rc.d/nginx_passenger reload"
   end
+end
+
+desc "Reload Nginx"
+task :reload_nginx do 
+  run "#{try_sudo} /usr/local/etc/rc.d/nginx_passenger reload"
 end

@@ -1,0 +1,16 @@
+<% content_for :mainColumn do %>
+  <h1 class="leftColumnTitle">Киоск</h1>
+
+  <div class="spacer"></div>
+
+  <span class="item_name">Дата строительства: </span><%= @kiosk.install_date.strftime("%a, %d/%m/%Y") %><br />
+  <span class="item_description">Подробности: </span><%= @kiosk.description %><br />
+
+  <div id="spacer"></div>
+
+  <div class="thumbBox">
+    <% @kiosk.kiosk_photos.each do |photo| %>
+      <%= link_to(image_tag("kiosks/thumbs/thumb_#{photo.filename}", :class => "thumbnail"), "/images/kiosks/fullsize/#{photo.filename}") %>
+    <% end %>
+  </div>
+<% end %>
