@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  install_date: 2011-08-16
+  description: 
+
+two:
+  install_date: 2011-08-16
+  description: 
