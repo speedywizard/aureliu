@@ -1,8 +1,19 @@
+/* General rules */
+
+* {
+  margin:0;
+  padding:0;
+}
+
 img {
   border: 0;
 }
 
-/* Menu CSS */
+/* Header CSS */
+
+div#header {
+  margin:0;
+}
 
 div#logo {
   border-style:none;
@@ -60,21 +71,86 @@ img#logo {
 
 /* Main block CSS */
 #main {
+  padding:0;
+  margin:0 auto;
+  width:80%;
 }
 
 #leftColumn {
+  text-indent:20px;
+  float:left;
+  width:70%;
+  padding-left:5px;
 }
 
 #sidebar {
+  width:25%;
+  float:right;
+}
+
+.sidebar_header {
+  margin:0 auto;
+  width:236px;
+  line-height:44px;
+  height:44px;
+  background-image:url(/images/sidebar_header.png);
+  vertical-align:middle;
+  text-align:center;
+  font-size:24px;
+  color:#ffffff;
+}
+
+.sidebar_body {
+  margin:0 auto;
+  width:236px;
+  height:165px;
+  background-image:url(/images/sidebar_block.png);
+}
+
+.sidebar_body p {
+  font-size:12px;
+  color:#012345;
+  text-indent:10px;
+  padding:5px;
 }
 
 /* Footer CSS */
 hr#footer_separator {
-  width:95%;
+  width:100%;
+  margin-top:10px;
+  margin-bottom:10px;
 }
 
 #footer {
   margin-top:10px;
   margin:0 auto;
   width:78%;
+  padding-bottom:30px;
+}
+
+#footer_span {
+  float:right;
+  display:inline;
+}
+
+/* Titles CSS */
+.leftColumnTitle {
+  margin:0;
+  padding-bottom:5px;
+  font-size:24px;
+  color:#268C99;
+}
+
+/* Other rules */
+a#developer:link, a#developer:visited {
+  text-decoration:none;
+}
+
+a#developer:hover {
+  text-decoration:none;
+  color:black;
+}
+
+.spacer {
+  padding:15px 0;
 }
